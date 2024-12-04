@@ -9,7 +9,9 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({
 	TellerTest.class, 
 	TestInputHandler.class,
-	TestOutputHandler.class
+	TestOutputHandler.class,
+	RequestTest.class
 })
 public class AllTests {
+	
 }
