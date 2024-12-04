@@ -10,9 +10,10 @@ import org.junit.runners.Suite;
 	TellerTest.class, 
 	TestInputHandler.class,
 	TestOutputHandler.class,
+	RequestTest.class,
 	CustomerTest.class,
 	SessionTest.class,
 	BankTest.class
-})
 public class AllTests {
+	
 }
