@@ -1,5 +1,15 @@
 Customer_ID: 1
 	Account_ID: 2
+<<<<<<< HEAD
+		Pin: "password"
+		Users: [Customer_ID! 1]
+		Frozen: false
+<<<<<<< HEAD
+		Amount: 150.0
+=======
+		Amount: 0.0
+>>>>>>> 21ee7850dc68d7613ab596af78ceee924f77a84d
+=======
 		Pin: "1234"
 		Users: [Customer_ID! 1]
 		Frozen: false
@@ -10,4 +20,5 @@ Customer_ID: 1
 		Users: [Customer_ID! 1]
 		Frozen: false
 		Amount: 3.0
+>>>>>>> 3b0509686db6869a105dc8bcd48bf9dfb651b6e5
 		AccountType: Undefined

@@ -1,0 +1,19 @@
+Customer_ID: 1
+	Account_ID: 2
+		Pin: "1234"
+		Users: [Customer_ID! 1]
+		Frozen: false
+		Amount: 5000.00
+		AccountType: Savings
+	Account_ID: 3
+		Pin: "5678"
+		Users: [Customer_ID! 1]
+		Frozen: false
+		Amount: 3000.00
+		AccountType: Checkings
+	Account_ID: 4
+		Pin: "3333"
+		Users: [Customer_ID! 2]
+		Frozen: true
+		Amount: 1000.00
+		AccountType: Savings

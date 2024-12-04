@@ -23,10 +23,12 @@ class TellerTest {
     // Check if the teller can create an account
     @Test
     void testCreateAccount() {
-        Account newAccount = teller.createAccount("1234");
+        String pin = "1234";
+        Account newAccount = teller.createAccount(pin);
         assertNotNull(newAccount);
-        
+        assertEquals(pin, newAccount.getPin());
     }
+        
     
     // Check if the teller can check credentials
     @Test
@@ -39,6 +41,7 @@ class TellerTest {
 	// Check if the teller can freeze an account
 	@Test
 	void testFreezeAccount() {
+		account.setFrozen(false);
 		teller.freezeAccount(account);
 		assertTrue(account.getFrozen());
 	}
@@ -50,11 +53,6 @@ class TellerTest {
 		assertTrue(customer.getAccounts().contains(account));
 	}
 
-	// Check if the teller can read a log (HARDCODED AS "log" currently)
-	@Test
-	void testReadLog() {
-		assertEquals("log", teller.readLog(0));
-	}
 
 	// Check if the teller can recover a pin
 	@Test

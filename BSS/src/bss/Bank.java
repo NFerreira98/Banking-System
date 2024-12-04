@@ -118,7 +118,7 @@ public class Bank {
                 writer.write("\t\tAmount: " + account.getAmount() + "\n");
                 writer.write("\t\tAccountType: " + account.getAccountType() + "\n");
             }
-            //writer.write("\t\t " + "\n");
+            
         }
         // Close the writer to flush data to the file
         writer.close();
@@ -202,7 +202,7 @@ public class Bank {
     	HashMap<Integer, Customer> customerCount, HashMap<Integer, Account> accountCount) 
     	throws IOException {
     	//get the total number of accounts
-    	int numCustomers = customerCount.size();
+    	//int numCustomers = customerCount.size();
     	//ArrayList to store accounts for Customer
     	ArrayList<Account> custAccounts = new ArrayList<Account>();
     	//arrayList to store customers for Bank

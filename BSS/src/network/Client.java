@@ -34,7 +34,7 @@ public class Client {
 	private synchronized static void startConnection() {
 		//final String HOST = "localhost;
 
-		final String HOST = "134.154.20.171";
+		final String HOST = "localhost";
 		final int PORT = 1234;
 
 		Socket socket = null;

@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" path="BSS/src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="/Users/nicholasferreira/Downloads/mockito-core-5.14.2-javadoc.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/nicholasferreira/Downloads/mockito-core-5.14.2.jar"/>
+	<classpathentry kind="lib" path="/Users/nicholasferreira/Downloads/byte-buddy-agent-1.15.10.jar"/>
+	<classpathentry kind="lib" path="/Users/nicholasferreira/Downloads/mockito-inline-5.2.0.jar"/>
 	<classpathentry kind="output" path="BSS/bin"/>
 </classpath>

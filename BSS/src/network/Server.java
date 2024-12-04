@@ -94,6 +94,7 @@ public class Server {
 			//			this.loggedIn = false;
 			//this.bank = bank;
 			loggedIn = false;
+
 			this.bank = bank;
 			this.clientSocket = socket;
 		}
@@ -152,8 +153,10 @@ public class Server {
 		 * Switch statement for processing incoming requests
 		 */
 
+
 		private synchronized void processRequest(List<Request> req) {
 			
+
 			// for every request in the list of requests that was received
 			for (Request request : req) {
 				RequestType type = request.getType();
@@ -292,8 +295,9 @@ public class Server {
 			
 		}
 
+
 		private synchronized void doDeposit(Request request) {
-			if (loggedIn == true) {
+			if (loggedIn) {
 
 				// getOccupied is for checking if the account is currently processing something
 				// so two people can't interact with an account at once
@@ -318,10 +322,10 @@ public class Server {
 		}
 
 
-
 		private synchronized void doWithdraw(Request request) {
-			if (loggedIn == true) {
-				if (session.getAccount().getOccupied() == false && session.getAccount().getFrozen() == false) {
+			if (loggedIn) {
+				if (!session.getAccount().getOccupied() && !session.getAccount().getFrozen()) {
+
 
 					// if they have insufficient funds
 					if (session.getAccount().getAmount() < request.getAmount()) {
@@ -344,9 +348,11 @@ public class Server {
 			System.out.println("Balance: $" + session.getAccount().getAmount());
 		}
 
+
 		private synchronized void doTransfer(Request request) {
 			if (loggedIn == true) {
 				if (session.getAccount().getOccupied() == false && session.getAccount().getFrozen() == false) {
+
 
 					// Account has insufficient funds, send failure
 					if (session.getAccount().getAmount() < request.getAmount()) {
