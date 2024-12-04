@@ -12,7 +12,12 @@ import org.junit.runners.Suite;
 	TestOutputHandler.class,
 	CustomerTest.class,
 	SessionTest.class,
-	BankTest.class
+	BankTest.class,
+	AccountTest.class,
+	ATMTest.class,
+	BankTest.class,
+	LogTest.class,
+	
 })
 public class AllTests {
 }
